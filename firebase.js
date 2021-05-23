@@ -9,6 +9,8 @@ const firebaseConfig = {
   appId: "1:867241922950:web:7ed0c6514c7e6ea9b01c07",
 };
 
+console.log("your api => " + process.env.API_KEY);
+
 const app = firebase.apps.length
   ? firebase.app()
   : firebase.initializeApp(firebaseConfig);
